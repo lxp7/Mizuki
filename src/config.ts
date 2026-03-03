@@ -155,7 +155,7 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true, // 在主页显示自定义文本
-			title: "わたしの部屋", // 主页横幅主标题
+			title: "凉皮好吃", // 主页横幅主标题
 
 			subtitle: [
 				"特別なことはないけど、君がいると十分です",
