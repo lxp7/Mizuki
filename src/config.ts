@@ -653,3 +653,13 @@ export const umamiConfig = {
 <script defer src="XXXX.XXX" data-website-id="ABCD1234"></script>
   `.trim(), // 上面填你要插入的Script,不用再去Layout中插入
 } as const;
+
+// Bangumi 用户ID配置
+bangumi: {
+  userId: "849626", // 在此处设置你的Bangumi用户ID，可以设置为 "sai" 测试
+},
+
+// 番剧模式选择
+anime: {
+  mode: "bangumi", // 番剧页面模式："bangumi" 使用Bangumi API，"local" 使用本地配置，"bilibili" 使用Bilibili API
+},
