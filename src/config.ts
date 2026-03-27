@@ -263,94 +263,63 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Archive,
 		// 支持自定义导航栏链接，支持多级菜单
 		{
-			name: "Links",
-			url: "/links/",
-			icon: "material-symbols:link",
+			name: "游戏",
+			url: "#",
+			icon: "material-symbols:videogame-asset",
 			children: [
 				{
-					name: "GitHub",
-					url: "https://github.com/lxp7",
-					external: true,
-					icon: "fa7-brands:github",
-				},
+					name: "游戏单",
+					url: "/game/",
+					icon: "mdi:steam",
+				},				
 				{
-					name: "Bilibili",
-					url: "https://space.bilibili.com/70974861",
-					external: true,
-					icon: "fa7-brands:bilibili",
-				},
-				{
-					name: "Gitee",
-					url: "https://gitee.com/matsuzakayuki/Mizuki",
-					external: true,
-					icon: "mdi:git",
+					name: "评测",
+					url: "/?category=Examples/",
+					icon: "material-symbols:voice-chat",
 				},
 			],
 		},
 		{
-			name: "My",
-			url: "/content/",
-			icon: "material-symbols:person",
+			name: "影音",
+			url: "#",
+			icon: "material-symbols:movie",
 			children: [
 				{
 					name: "Anime",
 					url: "/anime/",
-					icon: "material-symbols:movie",
+					icon: "fa7-brands:bilibili",
 				},
 				{
-					name: "Diary",
-					url: "/diary/",
-					icon: "material-symbols:book",
+					name: "剧评",
+					url: "/gameline/",
+					icon: "material-symbols:comment-bank",
 				},
+			],
+		},
+		{
+			name: "Diary",
+			url: "/diary/",
+			icon: "material-symbols:book",
+		},
+		{
+			name: "My",
+			url: "/#/",
+			icon: "material-symbols:person",
+			children: [
+  				{
+                    name: "About",
+                    url: "/about/",
+                    icon: "material-symbols:info",
+                },
+   				{
+                    name: "Timeline",
+                    url: "/timeline/",
+                    icon: "material-symbols:timeline",
+                },
 				{
 					name: "Gallery",
 					url: "/albums/",
 					icon: "material-symbols:photo-library",
-				},
-				{
-					name: "Devices",
-					url: "devices/",
-					icon: "material-symbols:devices",
-					external: false,
-				},
-			],
-		},
-		{
-			name: "About",
-			url: "/content/",
-			icon: "material-symbols:info",
-			children: [
-				{
-					name: "About",
-					url: "/about/",
-					icon: "material-symbols:person",
-				},
-				{
-					name: "Friends",
-					url: "/friends/",
-					icon: "material-symbols:group",
-				},
-			],
-		},
-		{
-			name: "Others",
-			url: "#",
-			icon: "material-symbols:more-horiz",
-			children: [
-				{
-					name: "Projects",
-					url: "/projects/",
-					icon: "material-symbols:work",
-				},
-				{
-					name: "Skills",
-					url: "/skills/",
-					icon: "material-symbols:psychology",
-				},
-				{
-					name: "Timeline",
-					url: "/timeline/",
-					icon: "material-symbols:timeline",
 				},
 			],
 		},

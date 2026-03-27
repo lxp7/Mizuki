@@ -329,6 +329,22 @@ enum I18nKey {
 	// 布局切换按钮
 	switchToGridMode = "switchToGridMode",
 	switchToListMode = "switchToListMode",
+
+	//游戏界面 
+	games = "games",
+	gamesTitle = "gamesTitle",
+	gamesSubtitle = "gamesSubtitle",
+	gamesFilterAll = "gamesFilterAll",
+	gameStatusPlaying = "gameStatusPlaying",
+	gameStatusCompleted = "gameStatusCompleted",
+	gameStatusPlanned = "gameStatusPlanned",
+	gameStatusOnHold = "gameStatusOnHold",
+	gameStatusDropped = "gameStatusDropped",
+	gamesEmpty = "gamesEmpty",
+	gamesEmptyLocal = "gamesEmptyLocal",
+	gamePlatform = "gamePlatform",
+	gameReleaseYear = "gameReleaseYear",
+	gameDeveloper = "gameDeveloper",
 }
 
 export default I18nKey;

@@ -341,4 +341,20 @@ export const zh_TW: Translation = {
 	// 布局切換按鈕
 	[Key.switchToGridMode]: "切換到網格模式",
 	[Key.switchToListMode]: "切換到列表模式",
+
+	//游戏翻译
+	[Key.games]: "游戏",
+	[Key.gamesTitle]: "我的游戏历程",
+	[Key.gamesSubtitle]: "记录玩过的游戏和感受",
+	[Key.gamesFilterAll]: "全部",
+	[Key.gameStatusPlaying]: "正在玩",
+	[Key.gameStatusCompleted]: "已通关",
+	[Key.gameStatusPlanned]: "想玩",
+	[Key.gameStatusOnHold]: "搁置",
+	[Key.gameStatusDropped]: "放弃",
+	[Key.gamesEmpty]: "还没有游戏记录",
+	[Key.gamesEmptyLocal]: "请在 src/data/games.ts 中添加游戏数据。",
+	[Key.gamePlatform]: "平台",
+	[Key.gameReleaseYear]: "发行年份",
+	[Key.gameDeveloper]: "开发商",
 };
