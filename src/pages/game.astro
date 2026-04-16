@@ -46,7 +46,7 @@ interface GameItem {
 // ---------- 工具函数 ----------
 // 生成 Steam 竖版封面 URL
 function getSteamCoverUrl(appid: number): string {
-  return `https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/${appid}/library_600x900.jpg`;
+  return `https://cdn.cloudflare.steamstatic.com/steam/apps/${appid}/library_600x900.jpg`;
 }
 
 // 将原始数据转换为标准 GameItem（自动处理封面）
