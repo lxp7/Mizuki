@@ -274,7 +274,7 @@ export const navBarConfig: NavBarConfig = {
 				},				
 				{
 					name: "评测",
-					url: "/?category=games/",
+					url: "/archive/?tag=game",
 					icon: "material-symbols:voice-chat",
 				},
 			],
