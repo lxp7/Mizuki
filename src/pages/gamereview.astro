@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const posts = await Astro.glob('../content/posts/games/*.md');
+
+posts.sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
+---
+
+<Layout title="🎮 游戏评测">
+  <h1>🎮 游戏评测</h1>
+
+  <div class="games">
+    {posts.map(post => (
+      <a href={post.url} class="card">
+        <h2>{post.frontmatter.title}</h2>
+        <p>⭐ {post.frontmatter.rating}</p>
+      </a>
+    ))}
+  </div>
+</Layout>
+
+<style>
+.games {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  text-decoration: none;
+  color: inherit;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+</style>
